@@ -12,3 +12,51 @@
 /* .middle-text{
     text-align: center;
 } */
+.cardText{
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.first-line{
+    border-bottom: 1px solid #392d23;
+}
+.second-line  a{
+    color: white;
+    text-decoration: none;
+}
+.third-line{
+    display: none;
+    /* 이 효과를 주면 화면에서 사라진다. (1단계) */
+}
+
+
+/* 미디어 쿼리는 ? 모바일 버전에 맞춰서 부트스트랩이 변경이 되는데 내가 더 디테일함을 추가학 싶은 경우 ? ?  ?? ? 
+사용하는게 미디어 쿼리이다. ( 내가 설정한 사이즈에 따라서 발동한다. )
+
+미디어 쿼리 사용하는데 스크린 사이즈가 0 - 48rem 까지라는 의미이다. ( 모바일 버전에 대해서 사용하려면 저 줄 모두 작성해야한다.)
+이때 내가 {} 괄호 안에 있는 스타일을 발휘한다는 의미이다. */
+@media screen and (max-width:48rem) { 
+    .first-line{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:48rem){
+    .second-line{
+        padding-right: 2rem;
+        padding-left: 2rem;
+        border-bottom: 1px solid #392d23;
+    }
+    
+}
+
+@media screen and (max-width:48rem){
+    .third-line{
+        display: block;
+        /* block이 기본값이다. */
+    }
+    
+    
+}
